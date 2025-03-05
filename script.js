@@ -26,7 +26,8 @@ function initMap() {
         fillColor: "#AA0000",
         strokeColor: "#AA0000"
     });
-    circle.bindTo("center", marker, "position");
+
+    circle.setCenter(location);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
