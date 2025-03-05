@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -12,7 +10,6 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
 nav ul {
     list-style: none;
     display: flex;
@@ -36,26 +33,22 @@ nav ul li a:hover {
     background: #555;
 }
 
-/* Headings */
 h1, h2 {
     text-align: center;
     margin: 20px 0;
 }
 
-/* Container (Fluid Layout for One Page) */
 .container-fluid {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Fixed Layout for Another Page */
 .container-fixed {
     width: 960px;
     margin: 0 auto;
 }
 
-/* JavaScript Button Styling */
 button {
     padding: 10px 20px;
     margin: 10px;
@@ -71,14 +64,12 @@ button:hover {
     background: #0056b3;
 }
 
-/* JavaScript Color Change */
 #heading {
     font-size: 24px;
     color: black;
     margin-top: 20px;
 }
 
-/* Image Slider */
 .slider {
     margin: 20px auto;
     width: 300px;
@@ -89,7 +80,6 @@ button:hover {
     height: auto;
 }
 
-/* Google Map Styling */
 #map {
     width: 80%;
     max-width: 800px;
@@ -97,7 +87,6 @@ button:hover {
     margin: 20px auto;
 }
 
-/* Existing Media Queries */
 @media (min-width: 600px) {
     body {
         background-color: #e0e0e0;
@@ -118,7 +107,6 @@ button:hover {
     }
 }
 
-/* 🔹 Required Mobile-Friendly Media Queries (Added Without Changing Existing Code) */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
