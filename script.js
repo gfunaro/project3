@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Welcome to my website!");
 });
 
-var images = ["images/logo.jpg", "images/work.jpg", "images/hobby.jpg"];
+var images = ["images/logo.jpg", "images/map.png", "images/me.png"];
 var index = 0;
 
 function updateImage() {
