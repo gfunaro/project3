@@ -33,3 +33,20 @@ function initMap() {
 document.addEventListener("DOMContentLoaded", function () {
     alert("Welcome to my website!");
 });
+
+var images = ["images/logo.jpg", "images/work.jpg", "images/hobby.jpg"];
+var index = 0;
+
+function updateImage() {
+    document.getElementById("sliderImage").src = images[index];
+}
+
+function nextImage() {
+    index = (index + 1) % images.length;
+    updateImage();
+}
+
+function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    updateImage();
+}
