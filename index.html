@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Website</title>
     
-    <!-- Link to CSS Files -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
     <div class="container-fluid">
-        
-        <!-- Website Logo -->
         <img src="images/logo.jpg" alt="Website Logo" width="150">
         
-        <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About Me</a></li>
+                <li><a href="map.html">Google Map</a></li>
             </ul>
         </nav>
         
-        <h1>Welcome to My Website</h1>
+        <h1 id="heading">Welcome to My Website</h1>
+        <button onclick="changeColor()">Change Color</button>
         
         <img src="images/me.png" alt="Picture of Me" width="300">
         <p>Hi! I'm Gary Funaro, and this website showcases my professional experience, personal interests, and projects. Feel free to explore!</p>
@@ -35,25 +34,28 @@
             <li><strong>Resume:</strong> Learn more about my professional background and skills.</li>
             <li><strong>About Me:</strong> Get to know more about my interests, hobbies, and passions.</li>
         </ul>
-        
+
         <h2>Gallery</h2>
-        <p>Here are some images that represent my work and interests.</p>
         <img src="images/logo.jpeg" alt="Website Logo" width="150">
         <img src="images/work.jpg" alt="Work Experience" width="300">
         <img src="images/hobby.jpg" alt="Hobbies" width="300">
-        
+
         <h2>Featured Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/p8b6WDI_NIQ"
-            style="border: none;"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p8b6WDI_NIQ" 
+            style="border: none;" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
-        
+
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:GFunaro@gmail.com">GFunaro@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/garyfunaro">linkedin.com/in/garyfunaro</a></p>
-        <img src="images/map.png" alt="Location map" width="400">
-        
+
+        <div class="slider">
+            <img id="sliderImage" src="image1.jpg" alt="Slideshow Image">
+            <button onclick="nextImage()">Next</button>
+        </div>
+
     </div>
     
 </body>
