@@ -1,0 +1,84 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Container (Fluid Layout for One Page) */
+.container-fluid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fixed Layout for Another Page */
+.container-fixed {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Unique Page Styles */
+.home-title {
+    color: blue;
+}
+
+.resume-header {
+    font-weight: bold;
+}
+
+.about-section {
+    text-decoration: underline;
+}
+
+/* Media Queries (Required for Responsiveness) */
+@media (min-width: 600px) {
+    body {
+        background-color: #e0e0e0;
+    }
+
+    nav ul {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: #d0d0d0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+}
