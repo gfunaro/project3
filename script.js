@@ -6,7 +6,7 @@ function initMap() {
         center: location
     });
 
-    var marker = new google.maps.Marker({
+    var marker = new google.maps.marker.AdvancedMarkerElement({
         position: location,
         map: map,
         title: "Our Location"
@@ -33,15 +33,3 @@ function initMap() {
 document.addEventListener("DOMContentLoaded", function () {
     alert("Welcome to my website!");
 });
-
-function changeColor() {
-    document.getElementById("heading").style.color = "blue";
-}
-
-var images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-var index = 0;
-
-function nextImage() {
-    index = (index + 1) % images.length;
-    document.getElementById("sliderImage").src = images[index];
-}
