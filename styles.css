@@ -97,7 +97,7 @@ button:hover {
     margin: 20px auto;
 }
 
-/* Media Queries */
+/* Existing Media Queries */
 @media (min-width: 600px) {
     body {
         background-color: #e0e0e0;
@@ -115,5 +115,57 @@ button:hover {
 
     nav ul li a {
         font-size: 1.5rem;
+    }
+}
+
+/* 🔹 Required Mobile-Friendly Media Queries (Added Without Changing Existing Code) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .container-fluid {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
     }
 }
