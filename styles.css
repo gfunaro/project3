@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -28,6 +29,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #555;
 }
 
 /* Headings */
@@ -49,20 +55,49 @@ h1, h2 {
     margin: 0 auto;
 }
 
-/* Unique Page Styles */
-.home-title {
-    color: blue;
+/* JavaScript Button Styling */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
 }
 
-.resume-header {
-    font-weight: bold;
+button:hover {
+    background: #0056b3;
 }
 
-.about-section {
-    text-decoration: underline;
+/* JavaScript Color Change */
+#heading {
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
 }
 
-/* Media Queries (Required for Responsiveness) */
+/* Image Slider */
+.slider {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+/* Google Map Styling */
+#map {
+    width: 80%;
+    max-width: 800px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+/* Media Queries */
 @media (min-width: 600px) {
     body {
         background-color: #e0e0e0;
